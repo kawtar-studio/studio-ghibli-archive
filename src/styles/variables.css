@@ -1,0 +1,73 @@
+:root {
+    --color-cream: #f7f2e8;
+    --color-paper: #fdfaf4;
+    --color-beige: #e7dcc8;
+    --color-sage: #b9c9b2;
+    --color-sage-light: #d9e4d1;
+    --color-forest: #4f6b56;
+    --color-moss: #708d69;
+    --color-blue: #b8cedd;
+    --color-blue-soft: #d9e8f2;
+    --color-pink: #d8b5b5;
+    --color-gold: #d5b66f;
+    --color-brown: #866c53;
+    --color-text: #2e2a25;
+    --color-text-soft: #6d675f;
+    --color-white: #ffffff;
+    --color-border: #bcae97;
+    --color-shadow: rgba(55, 45, 35, 0.14);
+    --color-overlay: rgba(245, 239, 229, 0.92);
+
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "Noto Sans JP", sans-serif;
+    --font-ui: "Press Start 2P", monospace;
+
+    --fs-xs: 0.7rem;
+    --fs-sm: 0.85rem;
+    --fs-base: 1rem;
+    --fs-md: 1.15rem;
+    --fs-lg: 1.45rem;
+    --fs-xl: 2rem;
+    --fs-2xl: 2.8rem;
+    --fs-3xl: 4rem;
+
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 40px;
+    --space-9: 56px;
+    --space-10: 72px;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 14px;
+
+    --border-thin: 1px solid var(--color-border);
+    --border-medium: 2px solid var(--color-border);
+
+    --shadow-xs: 0 1px 2px var(--color-shadow);
+    --shadow-sm: 0 2px 6px var(--color-shadow);
+    --shadow-md: 0 6px 18px var(--color-shadow);
+    --shadow-lg: 0 14px 34px rgba(60, 52, 40, 0.18);
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.35s ease;
+    --transition-slow: 0.5s ease;
+
+    --container: 1400px;
+    --header-height: 72px;
+
+    --z-base: 1;
+    --z-nav: 100;
+    --z-dropdown: 500;
+    --z-modal: 1000;
+}
