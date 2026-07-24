@@ -1,51 +1,17 @@
-html {
-    background: var(--color-cream);
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #d8cdbb;
+
+    font-family:
+        "MS PGothic",
+        "Yu Gothic",
+        Arial,
+        sans-serif;
 }
 
-body {
-    background:
-        linear-gradient(rgba(255,255,255,.28), rgba(255,255,255,.28)),
-        var(--color-cream);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    overflow-x: hidden;
-}
 
 #root {
     min-height: 100vh;
-}
-
-.app {
-    width: min(var(--container), calc(100% - 64px));
-    margin: 32px auto;
-    min-height: calc(100vh - 64px);
-    background: var(--color-paper);
-    border: var(--border-medium);
-    box-shadow: var(--shadow-lg);
-    position: relative;
-}
-
-.app::before {
-    content: "";
-    position: absolute;
-    inset: 8px;
-    border: var(--border-thin);
-    pointer-events: none;
-}
-
-section {
-    position: relative;
-}
-
-.container {
-    width: min(1280px, calc(100% - 64px));
-    margin: 0 auto;
-}
-
-.hidden {
-    display: none;
-}
-
-.text-center {
-    text-align: center;
 }

@@ -3,16 +3,25 @@ import "./MainLayout.css";
 export default function MainLayout({ children }) {
     return (
         <div className="app-window">
+
             <header className="window-titlebar">
+
                 <div className="title-left">
                     <span className="window-dot"></span>
-                    <h1>Studio Ghibli Archive</h1>
+
+                    <h1>
+                        Studio Ghibli Encyclopedia CD-ROM
+                    </h1>
                 </div>
 
                 <div className="title-right">
-                    <span>2004 Edition</span>
+                    <span>
+                        Version 1.0 • Japan • 2004
+                    </span>
                 </div>
+
             </header>
+
 
             <nav className="window-nav">
                 <a href="/">Home</a>
@@ -24,14 +33,43 @@ export default function MainLayout({ children }) {
                 <a href="/references">Archive</a>
             </nav>
 
+
             <main className="window-content">
+
+                <div className="archive-badge">
+
+                    <span>
+                        ARCHIVE SYSTEM
+                    </span>
+
+                    <strong>
+                        GHIBLI DIGITAL ENCYCLOPEDIA
+                    </strong>
+
+                    <small>
+                        日本 • 2004
+                    </small>
+
+                </div>
+
+
                 {children}
+
             </main>
 
+
             <footer className="window-statusbar">
-                <span>Status : Ready</span>
-                <span>Studio Ghibli Encyclopedia</span>
+
+                <span>
+                    Archive Loaded
+                </span>
+
+                <span>
+                    Version 1.0 • Japan • 2004
+                </span>
+
             </footer>
+
         </div>
     );
 }

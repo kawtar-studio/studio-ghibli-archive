@@ -86,3 +86,58 @@
     font-size: .75rem;
     letter-spacing: .08em;
 }
+
+.archive-badge {
+
+    width: 260px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(135deg,
+            #fffdf8,
+            #eee1cd);
+
+    border: 1px solid #bca98c;
+
+    box-shadow:
+        4px 4px 0 rgba(0, 0, 0, .08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-size: .8rem;
+
+    letter-spacing: .12em;
+
+}
+
+
+.archive-badge span {
+
+    font-size: .65rem;
+
+    color: #8b7b62;
+
+}
+
+
+.archive-badge strong {
+
+    font-size: 1rem;
+
+    color: #40382d;
+
+}
+
+
+.archive-badge small {
+
+    font-size: .65rem;
+
+    opacity: .6;
+
+}
