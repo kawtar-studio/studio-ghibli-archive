@@ -1,0 +1,58 @@
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-xs {
+    gap: var(--space-2);
+}
+
+.gap-sm {
+    gap: var(--space-4);
+}
+
+.gap-md {
+    gap: var(--space-6);
+}
+
+.gap-lg {
+    gap: var(--space-8);
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-7);
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-7);
+}
+
+.four-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+}
