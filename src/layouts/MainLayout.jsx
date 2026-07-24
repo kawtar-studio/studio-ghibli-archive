@@ -1,4 +1,5 @@
 import "./MainLayout.css";
+import ArchiveSidebar from "../components/ArchiveSidebar";
 
 export default function MainLayout({ children }) {
     return (
@@ -15,15 +16,14 @@ export default function MainLayout({ children }) {
                 </div>
 
                 <div className="title-right">
-                    <span>
-                        Version 1.0 • Japan • 2004
-                    </span>
+                    Version 1.0 • Japan • 2004
                 </div>
 
             </header>
 
 
             <nav className="window-nav">
+
                 <a href="/">Home</a>
                 <a href="/films">Films</a>
                 <a href="/history">History</a>
@@ -31,29 +31,19 @@ export default function MainLayout({ children }) {
                 <a href="/art-style">Art Style</a>
                 <a href="/legacy">Legacy</a>
                 <a href="/references">Archive</a>
+
             </nav>
 
 
             <main className="window-content">
 
-                <div className="archive-badge">
+                <ArchiveSidebar />
 
-                    <span>
-                        ARCHIVE SYSTEM
-                    </span>
+                <section className="archive-main">
 
-                    <strong>
-                        GHIBLI DIGITAL ENCYCLOPEDIA
-                    </strong>
+                    {children}
 
-                    <small>
-                        日本 • 2004
-                    </small>
-
-                </div>
-
-
-                {children}
+                </section>
 
             </main>
 
