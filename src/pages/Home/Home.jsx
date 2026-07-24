@@ -1,4 +1,4 @@
-import "./Home.css";
+import MovieMeta from "../../components/MovieMeta/MovieMeta";
 
 export default function Home() {
     return (
@@ -72,6 +72,8 @@ export default function Home() {
                             <p>
                                 Chihiro enters a mysterious spirit world where every encounter transforms her understanding of courage and identity.
                             </p>
+
+                            <MovieMeta />
 
                             <div className="featured-buttons">
                                 <button>Open Archive</button>
