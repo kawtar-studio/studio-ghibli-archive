@@ -5,16 +5,58 @@ export default function Home() {
         <section className="home">
 
             <div className="panel featured">
-                <span className="panel-label">FEATURED FILM</span>
 
-                <h2>Spirited Away</h2>
+                <div className="panel-window">
 
-                <p>
-                    A young girl enters a mysterious spirit world where courage,
-                    kindness and identity become her greatest strengths.
-                </p>
+                    <div className="panel-topbar">
+                        <div className="panel-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
 
-                <button>Open Archive →</button>
+                        <small>FEATURED ARCHIVE</small>
+                    </div>
+
+                    <div className="featured-body">
+
+                        <div className="featured-image">
+
+                            <div className="poster-placeholder">
+                                Poster
+                            </div>
+
+                        </div>
+
+                        <div className="featured-info">
+
+                            <h2>Spirited Away</h2>
+
+                            <div className="movie-meta">
+                                <span>★★★★★</span>
+                                <span>2001</span>
+                                <span>125 min</span>
+                            </div>
+
+                            <p>
+                                Chihiro enters a mysterious spirit world where every encounter
+                                transforms her understanding of courage, friendship and identity.
+                            </p>
+
+                            <div className="featured-buttons">
+
+                                <button>Open Archive</button>
+
+                                <button>Gallery</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
             <div className="panel info">
