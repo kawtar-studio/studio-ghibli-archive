@@ -8,6 +8,7 @@
 }
 
 
+
 .panel-window {
 
     background: #f8f1e5;
@@ -75,6 +76,7 @@
 
 
 
+
 .featured-body {
 
     display: flex;
@@ -99,9 +101,7 @@
     flex-shrink: 0;
 
     background:
-        linear-gradient(145deg,
-            #e4d4b5,
-            #b99d70);
+        linear-gradient(145deg, #e4d4b5, #b99d70);
 
     border: 1px solid #a99573;
 
@@ -116,6 +116,7 @@
     align-items: center;
 
 }
+
 
 
 
@@ -174,7 +175,6 @@
 
 
 
-
 .featured-info {
 
     flex: 1;
@@ -218,16 +218,74 @@
 
 
 
+.archive-data {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 220px);
+
+    gap: 18px;
+
+}
+
+
+
+
+.archive-data div {
+
+    padding: 12px;
+
+    background: #eee3cf;
+
+    border: 1px solid #c7b99f;
+
+}
+
+
+
+.archive-data span {
+
+    display: block;
+
+    font-size: .65rem;
+
+    letter-spacing: .25em;
+
+    color: #806f55;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.archive-data strong {
+
+    font-size: .85rem;
+
+    font-weight: normal;
+
+}
+
+
+
+
 
 .archive-line {
 
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #c7b99f;
+
     display: flex;
 
-    gap: 30px;
+    justify-content: space-between;
 
-    margin-top: 20px;
-
-    font-size: .7rem;
+    font-size: .65rem;
 
     letter-spacing: .2em;
 
@@ -270,18 +328,15 @@
 }
 
 
-.featured-buttons button:active {
-
-    transform: translateY(1px);
-
-}
-
 
 .featured-buttons button:hover {
 
     background: #fff8ed;
 
 }
+
+
+
 
 .archive-widgets {
 
@@ -294,6 +349,7 @@
     margin-top: 20px;
 
 }
+
 
 
 

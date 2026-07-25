@@ -28,6 +28,7 @@ export default function Home() {
                             FEATURED ARCHIVE
                         </small>
 
+
                     </div>
 
 
@@ -36,6 +37,7 @@ export default function Home() {
 
 
                         <div className="poster-placeholder">
+
 
                             <div className="poster-inner">
 
@@ -56,6 +58,7 @@ export default function Home() {
 
                             </div>
 
+
                         </div>
 
 
@@ -67,6 +70,7 @@ export default function Home() {
                             <h2>
                                 Spirited Away
                             </h2>
+
 
 
                             <div className="movie-meta">
@@ -92,25 +96,95 @@ export default function Home() {
                             </p>
 
 
+
                             <MovieMeta />
 
 
 
-                            <div className="archive-line">
+                            <div className="archive-data">
 
-                                <span>
-                                    ARCHIVE ID: GH-001
-                                </span>
 
-                                <span>
-                                    STATUS: COMPLETE
-                                </span>
+                                <div>
+
+                                    <span>
+                                        DIRECTOR
+                                    </span>
+
+                                    <strong>
+                                        Hayao Miyazaki
+                                    </strong>
+
+                                </div>
+
+
+
+                                <div>
+
+                                    <span>
+                                        RELEASED
+                                    </span>
+
+                                    <strong>
+                                        2001 • Japan
+                                    </strong>
+
+                                </div>
+
+
+
+                                <div>
+
+                                    <span>
+                                        RUNTIME
+                                    </span>
+
+                                    <strong>
+                                        125 minutes
+                                    </strong>
+
+                                </div>
+
+
+
+                                <div>
+
+                                    <span>
+                                        CATALOG
+                                    </span>
+
+                                    <strong>
+                                        GH-001
+                                    </strong>
+
+                                </div>
+
 
                             </div>
 
 
 
+
+                            <div className="archive-line">
+
+
+                                <span>
+                                    DATABASE STATUS : COMPLETE
+                                </span>
+
+
+                                <span>
+                                    DIGITAL ARCHIVE VERIFIED
+                                </span>
+
+
+                            </div>
+
+
+
+
+
                             <div className="featured-buttons">
+
 
                                 <button>
                                     Open Archive
@@ -125,6 +199,7 @@ export default function Home() {
                             </div>
 
 
+
                         </div>
 
 
@@ -135,40 +210,54 @@ export default function Home() {
 
 
             </div>
+
+
+
+
+
             <div className="archive-widgets">
 
 
                 <div className="widget">
 
+
                     <span>
                         DATABASE
                     </span>
+
 
                     <h3>
                         Film Library
                     </h3>
 
+
                     <p>
                         22 animated films archived.
                     </p>
+
 
                 </div>
 
 
 
+
                 <div className="widget">
+
 
                     <span>
                         ARCHIVE NOTE
                     </span>
 
+
                     <h3>
                         Today's Fact
                     </h3>
 
+
                     <p>
                         Hand drawn animation preserved since 1985.
                     </p>
+
 
                 </div>
 
