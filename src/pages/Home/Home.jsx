@@ -135,6 +135,45 @@ export default function Home() {
 
 
             </div>
+            <div className="archive-widgets">
+
+
+                <div className="widget">
+
+                    <span>
+                        DATABASE
+                    </span>
+
+                    <h3>
+                        Film Library
+                    </h3>
+
+                    <p>
+                        22 animated films archived.
+                    </p>
+
+                </div>
+
+
+
+                <div className="widget">
+
+                    <span>
+                        ARCHIVE NOTE
+                    </span>
+
+                    <h3>
+                        Today's Fact
+                    </h3>
+
+                    <p>
+                        Hand drawn animation preserved since 1985.
+                    </p>
+
+                </div>
+
+
+            </div>
 
 
 
