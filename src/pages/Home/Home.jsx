@@ -1,5 +1,4 @@
 import MovieMeta from "../../components/MovieMeta/MovieMeta";
-
 import "./Home.css";
 
 
@@ -9,8 +8,7 @@ export default function Home() {
 
         <section className="home">
 
-
-            <div className="panel featured">
+            <div className="featured">
 
 
                 <div className="panel-window">
@@ -29,6 +27,7 @@ export default function Home() {
                             FEATURED ARCHIVE
                         </small>
 
+
                     </div>
 
 
@@ -37,6 +36,7 @@ export default function Home() {
 
 
                         <div className="poster-placeholder">
+
 
                             <div className="poster-inner">
 
@@ -54,7 +54,9 @@ export default function Home() {
                                     2001
                                 </small>
 
+
                             </div>
+
 
                         </div>
 
@@ -67,7 +69,6 @@ export default function Home() {
                             <h2>
                                 Spirited Away
                             </h2>
-
 
 
                             <div className="movie-meta">
@@ -109,6 +110,7 @@ export default function Home() {
                                     Gallery
                                 </button>
 
+
                             </div>
 
 
@@ -127,5 +129,4 @@ export default function Home() {
         </section>
 
     );
-
 }
