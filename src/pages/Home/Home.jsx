@@ -8,6 +8,7 @@ export default function Home() {
 
         <section className="home">
 
+
             <div className="featured">
 
 
@@ -27,7 +28,6 @@ export default function Home() {
                             FEATURED ARCHIVE
                         </small>
 
-
                     </div>
 
 
@@ -36,7 +36,6 @@ export default function Home() {
 
 
                         <div className="poster-placeholder">
-
 
                             <div className="poster-inner">
 
@@ -56,7 +55,6 @@ export default function Home() {
 
 
                             </div>
-
 
                         </div>
 
@@ -94,9 +92,10 @@ export default function Home() {
                             </p>
 
 
-
                             <MovieMeta />
-                            
+
+
+
                             <div className="archive-line">
 
                                 <span>
@@ -138,7 +137,9 @@ export default function Home() {
             </div>
 
 
+
         </section>
 
     );
+
 }

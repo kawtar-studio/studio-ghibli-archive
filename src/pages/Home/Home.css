@@ -3,18 +3,12 @@
 }
 
 
-
 .featured {
-
     width: 100%;
-
 }
 
 
-
 .panel-window {
-
-    min-height: 520px;
 
     background: #f8f1e5;
 
@@ -78,10 +72,15 @@
 
 
 .featured-body {
+
     display: flex;
+
     align-items: center;
-    gap: 60px;
-    padding: 60px;
+
+    gap: 45px;
+
+    padding: 40px;
+
 }
 
 
@@ -90,7 +89,10 @@
 .poster-placeholder {
 
     width: 220px;
+
     height: 320px;
+
+    flex-shrink: 0;
 
     background:
         linear-gradient(145deg, #dfcfb1, #bca47b);
@@ -102,8 +104,6 @@
     justify-content: center;
 
     align-items: center;
-
-    flex-shrink: 0;
 
 }
 
@@ -175,9 +175,11 @@
 
 .featured-info h2 {
 
-    font-size: 2rem;
+    margin: 0 0 20px;
 
-    letter-spacing: .04em;
+    font-size: 2.2rem;
+
+    font-weight: 400;
 
 }
 
@@ -189,7 +191,7 @@
 
     gap: 25px;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
 }
 
@@ -199,7 +201,27 @@
 
     max-width: 650px;
 
-    line-height: 1.9;
+    line-height: 1.8;
+
+}
+
+
+
+
+
+.archive-line {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 20px;
+
+    font-size: .7rem;
+
+    letter-spacing: .2em;
+
+    color: #806f55;
 
 }
 
@@ -212,7 +234,7 @@
 
     gap: 15px;
 
-    margin-top: 35px;
+    margin-top: 30px;
 
 }
 
@@ -231,29 +253,8 @@
 }
 
 
-
 .featured-buttons button:hover {
 
     background: #fff8ed;
 
-}
-
-.archive-line {
-
-    margin-top: 25px;
-
-    display: flex;
-
-    gap: 30px;
-
-    font-size: .7rem;
-
-    letter-spacing: .2em;
-
-    color: #806f55;
-
-}
-
-.archive-widgets {
-    display: none;
 }
