@@ -18,7 +18,6 @@ export default function Home() {
 
                     <div className="panel-topbar">
 
-
                         <div className="panel-controls">
                             <span></span>
                             <span></span>
@@ -38,14 +37,26 @@ export default function Home() {
                     <div className="featured-body">
 
 
-                        <div className="poster-placeholder">
+                        <div className="poster-frame">
 
-                            <img
-                                src={howlsMovingCastle}
-                                alt="Howl's Moving Castle"
-                            />
+
+                            <div className="poster-placeholder">
+
+                                <img
+                                    src={howlsMovingCastle}
+                                    alt="Howl's Moving Castle"
+                                />
+
+                            </div>
+
+
+                            <span>
+                                GH-002 / MOVIE DATABASE
+                            </span>
+
 
                         </div>
+
 
 
 
@@ -101,7 +112,6 @@ export default function Home() {
                                 </div>
 
 
-
                                 <div>
                                     <span>
                                         RELEASED
@@ -113,7 +123,6 @@ export default function Home() {
                                 </div>
 
 
-
                                 <div>
                                     <span>
                                         RUNTIME
@@ -123,7 +132,6 @@ export default function Home() {
                                         119 minutes
                                     </strong>
                                 </div>
-
 
 
                                 <div>
@@ -150,10 +158,12 @@ export default function Home() {
 
 
                                 <span>
-                                    DIGITAL ARCHIVE VERIFIED
+                                    VERIFIED
                                 </span>
 
+
                             </div>
+
 
 
 
@@ -178,55 +188,9 @@ export default function Home() {
                         </div>
 
 
+
                     </div>
 
-
-                </div>
-
-
-            </div>
-
-
-
-            <div className="archive-widgets">
-
-
-                <div className="widget">
-
-                    <span>
-                        DATABASE
-                    </span>
-
-
-                    <h3>
-                        Film Library
-                    </h3>
-
-
-                    <p>
-                        22 animated films archived.
-                    </p>
-
-                </div>
-
-
-
-                <div className="widget">
-
-
-                    <span>
-                        ARCHIVE NOTE
-                    </span>
-
-
-                    <h3>
-                        Today's Fact
-                    </h3>
-
-
-                    <p>
-                        Hand drawn animation preserved since 1985.
-                    </p>
 
 
                 </div>
