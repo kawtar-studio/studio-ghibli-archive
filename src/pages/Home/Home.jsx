@@ -1,4 +1,5 @@
 import MovieMeta from "../../components/MovieMeta/MovieMeta";
+import howlsMovingCastle from "../../assets/images/howls-moving-castle.jpg";
 import "./Home.css";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
 
 
                     <div className="panel-topbar">
+
 
                         <div className="panel-controls">
                             <span></span>
@@ -38,26 +40,10 @@ export default function Home() {
 
                         <div className="poster-placeholder">
 
-
-                            <div className="poster-inner">
-
-                                <span>
-                                    STUDIO GHIBLI
-                                </span>
-
-
-                                <strong>
-                                    SPIRITED AWAY
-                                </strong>
-
-
-                                <small>
-                                    2001
-                                </small>
-
-
-                            </div>
-
+                            <img
+                                src={howlsMovingCastle}
+                                alt="Howl's Moving Castle"
+                            />
 
                         </div>
 
@@ -68,7 +54,7 @@ export default function Home() {
 
 
                             <h2>
-                                Spirited Away
+                                Howl's Moving Castle
                             </h2>
 
 
@@ -80,11 +66,11 @@ export default function Home() {
                                 </span>
 
                                 <span>
-                                    2001
+                                    2004
                                 </span>
 
                                 <span>
-                                    125 min
+                                    119 min
                                 </span>
 
                             </div>
@@ -92,7 +78,7 @@ export default function Home() {
 
 
                             <p>
-                                Chihiro enters a mysterious spirit world where every encounter transforms her understanding of courage and identity.
+                                Sophie is transformed by a mysterious curse and finds herself inside Howl's magical moving castle, discovering friendship, courage, and the power of change.
                             </p>
 
 
@@ -105,7 +91,6 @@ export default function Home() {
 
 
                                 <div>
-
                                     <span>
                                         DIRECTOR
                                     </span>
@@ -113,49 +98,42 @@ export default function Home() {
                                     <strong>
                                         Hayao Miyazaki
                                     </strong>
-
                                 </div>
 
 
 
                                 <div>
-
                                     <span>
                                         RELEASED
                                     </span>
 
                                     <strong>
-                                        2001 • Japan
+                                        2004 • Japan
                                     </strong>
-
                                 </div>
 
 
 
                                 <div>
-
                                     <span>
                                         RUNTIME
                                     </span>
 
                                     <strong>
-                                        125 minutes
+                                        119 minutes
                                     </strong>
-
                                 </div>
 
 
 
                                 <div>
-
                                     <span>
                                         CATALOG
                                     </span>
 
                                     <strong>
-                                        GH-001
+                                        GH-002
                                     </strong>
-
                                 </div>
 
 
@@ -166,7 +144,6 @@ export default function Home() {
 
                             <div className="archive-line">
 
-
                                 <span>
                                     DATABASE STATUS : COMPLETE
                                 </span>
@@ -176,9 +153,7 @@ export default function Home() {
                                     DIGITAL ARCHIVE VERIFIED
                                 </span>
 
-
                             </div>
-
 
 
 
@@ -213,13 +188,10 @@ export default function Home() {
 
 
 
-
-
             <div className="archive-widgets">
 
 
                 <div className="widget">
-
 
                     <span>
                         DATABASE
@@ -235,9 +207,7 @@ export default function Home() {
                         22 animated films archived.
                     </p>
 
-
                 </div>
-
 
 
 
