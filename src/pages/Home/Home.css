@@ -78,15 +78,10 @@
 
 
 .featured-body {
-
     display: flex;
-
-    gap: 55px;
-
-    padding: 55px;
-
     align-items: center;
-
+    gap: 60px;
+    padding: 60px;
 }
 
 
@@ -257,4 +252,8 @@
 
     color: #806f55;
 
+}
+
+.archive-widgets {
+    display: none;
 }
