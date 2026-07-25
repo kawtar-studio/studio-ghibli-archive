@@ -96,6 +96,18 @@ export default function Home() {
 
 
                             <MovieMeta />
+                            
+                            <div className="archive-line">
+
+                                <span>
+                                    ARCHIVE ID: GH-001
+                                </span>
+
+                                <span>
+                                    STATUS: COMPLETE
+                                </span>
+
+                            </div>
 
 
 
