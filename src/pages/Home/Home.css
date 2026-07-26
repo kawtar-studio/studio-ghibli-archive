@@ -1,212 +1,674 @@
 .home-page {
+
     max-width: 1400px;
+
     margin: 40px auto;
-    padding: 30px;
-    background: #f6efe3;
-    border: 1px solid #cab79c;
-    color: #443629;
-    font-family: Georgia, serif;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+
+    padding: 38px;
+
+    background:
+        linear-gradient(180deg,
+            #fffdfd,
+            #fff5fa);
+
+    border: 2px solid #f4bfd8;
+
+    border-radius: 22px;
+
+    color: #63485f;
+
+    box-shadow:
+        0 18px 45px rgba(228, 116, 173, .14),
+        inset 0 0 0 2px rgba(255, 255, 255, .7);
+
 }
+
+
+
+/* =========================
+   OPENING SPREAD
+========================= */
+
 
 .opening-spread {
+
     display: flex;
+
     flex-direction: column;
-    gap: 30px;
+
+    gap: 36px;
+
 }
+
+
 
 .issue-bar {
+
     display: flex;
+
     justify-content: space-between;
-    align-items: center;
+
+    padding-bottom: 16px;
+
+    border-bottom: 2px solid #f3c3dc;
+
+    color: #d25d99;
+
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: .75rem;
-    border-bottom: 1px solid #ccb48c;
-    padding-bottom: 12px;
+
+    letter-spacing: .35em;
+
+    font-size: .72rem;
+
 }
+
+
+
+
 
 .spread {
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    gap: 45px;
+
+    gap: 55px;
+
 }
 
-.left-page,
-.right-page {
-    display: flex;
-    flex-direction: column;
-}
+
+
+
 
 .left-page {
-    border-right: 1px solid #d8c4a3;
-    padding-right: 40px;
+
+    padding-right: 46px;
+
+    border-right: 2px dashed #f4c4dd;
+
 }
+
+
 
 .right-page {
-    padding-left: 10px;
+
+    padding-left: 8px;
+
 }
+
+
+
+
+
+
+/* =========================
+   LABELS
+========================= */
+
 
 .section-label {
-    display: inline-block;
-    margin-bottom: 14px;
-    font-size: .72rem;
-    letter-spacing: 3px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    margin-bottom: 18px;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(#fff,
+            #ffeaf5);
+
+    border: 1px solid #f3bfd8;
+
+    color: #d25d99;
+
     text-transform: uppercase;
-    color: #8f6d47;
+
+    letter-spacing: .28em;
+
+    font-size: .68rem;
+
 }
+
+
+
+.section-label::before {
+
+    content: "✿";
+
+    color: #ef7db6;
+
+}
+
+
+
+
+
+/* =========================
+   EDITORIAL
+========================= */
+
 
 .left-page h1 {
-    font-size: 3.8rem;
-    line-height: 1.05;
-    margin-bottom: 24px;
+
+    margin-bottom: 26px;
+
+    font-size: 4rem;
+
+    line-height: 1;
+
     font-weight: 500;
+
+    color: #cf5d99;
+
+    text-shadow:
+        0 2px white;
+
 }
+
+
 
 .editorial {
+
     line-height: 2;
-    text-align: justify;
+
     font-size: 1rem;
+
+    text-align: justify;
+
 }
+
+
+
+.editorial p {
+
+    margin-bottom: 18px;
+
+}
+
+
 
 .signature {
-    margin-top: 22px;
-    font-style: italic;
+
+    margin-top: 26px;
+
+    font-size: 1.8rem;
+
+    color: #d05a95;
+
 }
+
+
+
+
+
+/* =========================
+   POSTCARD
+========================= */
+
 
 .postcard {
-    margin-top: 40px;
-    padding: 22px;
-    border: 1px solid #ccb48c;
-    background: #fbf7ef;
+
+    margin-top: 55px;
+
+    padding: 38px;
+
+    background:
+        linear-gradient(#fff,
+            #fff4fa);
+
+    border: 2px solid #f2bfd7;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 28px rgba(228, 116, 173, .12);
+
 }
+
+
 
 .postcard-title {
+
+    margin-bottom: 18px;
+
+    color: #d05d97;
+
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
+
+    letter-spacing: .3em;
+
+    font-size: .8rem;
+
 }
+
+
+
+
+
+/* =========================
+   COVER
+========================= */
+
 
 .cover-image {
-    border: 1px solid #cab79c;
-    padding: 8px;
-    background: #faf5ed;
+
+    padding: 10px;
+
+    background: white;
+
+    border: 2px solid #f3bfd8;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 26px rgba(228, 116, 173, .12);
+
 }
+
+
 
 .cover-image img {
+
     width: 100%;
+
     display: block;
+
+    border-radius: 12px;
+
 }
+
+
+
+
+
+
+/* =========================
+   FEATURES
+========================= */
+
 
 .headline-block {
-    margin-top: 30px;
+
+    margin-top: 34px;
+
+    padding: 24px;
+
+    border-top: 2px dashed #f3bfd8;
+
+    border-bottom: 2px dashed #f3bfd8;
+
 }
+
+
 
 .headline-block ul {
-    margin: 0;
-    padding-left: 18px;
+
+    padding-left: 20px;
+
 }
+
+
 
 .headline-block li {
-    margin-bottom: 12px;
+
+    margin-bottom: 14px;
+
     line-height: 1.8;
+
 }
+
+
+
+.headline-block li::marker {
+
+    color: #ea81b8;
+
+}
+
+
+
+
+
+/* =========================
+   FILM OF THE MONTH
+========================= */
+
 
 .film-month {
-    margin-top: 40px;
-    border-top: 1px solid #d7c4a6;
-    padding-top: 24px;
+
+    margin-top: 38px;
+
+    padding-top: 28px;
+
+    border-top: 2px dashed #f3bfd8;
+
 }
+
+
+
+.film-month h2 {
+
+    margin: 8px 0 18px;
+
+    color: #cf5d99;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+}
+
+
+
+.film-quote {
+
+    max-width: 350px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+}
+
+
+
+.film-divider {
+
+    margin: 18px 0;
+
+    color: #e57bad;
+
+    letter-spacing: .5em;
+
+}
+
+
+
+.film-note {
+
+    max-width: 360px;
+
+    line-height: 1.8;
+
+    font-size: .95rem;
+
+}
+
+
+
+
+
+/* =========================
+   CONTENTS
+========================= */
+
 
 .contents {
-    margin-top: 70px;
+
+    margin-top: 80px;
+
 }
+
+
 
 .divider {
-    height: 1px;
-    background: #ccb48c;
-    margin-bottom: 24px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(90deg,
+            transparent,
+            #f3bfd8,
+            transparent);
+
 }
+
+
 
 .contents h2 {
-    font-size: 2rem;
-    margin-bottom: 28px;
+
+    text-align: center;
+
+    margin: 30px 0;
+
+    color: #cf5d99;
+
+    font-size: 2.3rem;
+
+    font-weight: 500;
+
 }
 
-.contents-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 60px;
-}
 
-.contents-grid div {
+
+
+
+.contents-list {
+
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dotted #bba47f;
-    padding-bottom: 8px;
-    letter-spacing: 1px;
+
+    flex-direction: column;
+
+    gap: 28px;
+
 }
+
+
+
+.contents-item {
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px dashed #f3bfd8;
+
+}
+
+
+
+.contents-header {
+
+    display: grid;
+
+    grid-template-columns: auto 1fr 50px;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+
+.contents-header h3 {
+
+    color: #cf5d99;
+
+    font-weight: 500;
+
+}
+
+
+
+.contents-header::after {
+
+    content: "";
+
+    border-bottom: 2px dotted #efb4d0;
+
+}
+
+
+
+.contents-header span {
+
+    text-align: right;
+
+    color: #cf5d99;
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+/* =========================
+   PREVIEWS
+========================= */
+
 
 .feature-preview {
-    margin-top: 70px;
+
+    margin-top: 80px;
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+
+    gap: 30px;
+
 }
+
+
 
 .feature-preview article {
-    border-top: 1px solid #cab79c;
-    padding-top: 18px;
+
+    padding: 26px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    border: 2px solid #f4c4dd;
+
 }
+
+
 
 .feature-preview h2 {
-    margin: 12px 0 18px;
-    font-size: 1.7rem;
+
+    margin: 16px 0;
+
+    color: #cf5d99;
+
+    font-size: 1.65rem;
+
     font-weight: 500;
+
 }
 
-.feature-preview p {
-    line-height: 1.8;
-}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
 
 .page-footer {
-    margin-top: 80px;
+
+    margin-top: 90px;
+
+    padding-top: 24px;
+
+    border-top: 2px dashed #f3c4dc;
+
     display: flex;
+
     justify-content: space-between;
-    border-top: 1px solid #cab79c;
-    padding-top: 18px;
+
+    color: #cb679d;
+
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: .72rem;
+
+    letter-spacing: .28em;
+
+    font-size: .7rem;
+
 }
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 
 @media(max-width:1000px) {
 
-    .spread {
+    .spread,
+    .feature-preview {
+
         grid-template-columns: 1fr;
+
     }
+
 
     .left-page {
+
         border-right: none;
-        border-bottom: 1px solid #ccb48c;
+
         padding-right: 0;
-        padding-bottom: 35px;
+
+        padding-bottom: 40px;
+
+        border-bottom: 2px dashed #f3bfd8;
+
     }
 
-    .right-page {
-        padding-left: 0;
+
+}
+
+
+
+@media(max-width:700px) {
+
+    .home-page {
+
+        padding: 24px;
+
+        margin: 20px;
+
     }
 
-    .feature-preview {
-        grid-template-columns: 1fr;
+
+    .issue-bar {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+
     }
 
-    .contents-grid {
-        grid-template-columns: 1fr;
-    }
 
     .left-page h1 {
-        font-size: 2.8rem;
+
+        font-size: 2.5rem;
+
+    }
+
+
+    .page-footer {
+
+        flex-direction: column;
+
+        gap: 12px;
+
     }
 
 }

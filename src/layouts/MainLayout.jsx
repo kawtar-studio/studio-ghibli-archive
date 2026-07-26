@@ -1,123 +1,106 @@
 import "./MainLayout.css";
-import ArchiveSidebar from "../components/ArchiveSidebar";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
+const navigation = [
+    { label: "HOME", path: "/" },
+    { label: "FILMS", path: "/films" },
+    { label: "HISTORY", path: "/history" },
+    { label: "THEMES", path: "/themes" },
+    { label: "ART GALLERY", path: "/art-style" },
+    { label: "LEGACY", path: "/legacy" },
+];
 
 export default function MainLayout() {
-
     return (
+        <div className="magazine-shell">
 
-        <div className="app-window">
+            <div className="paper">
 
+                <header className="masthead">
 
-            <header className="window-titlebar">
+                    <div className="masthead-top">
 
+                        <div className="issue">
 
-                <div className="title-left">
+                            <span>ISSUE 01</span>
 
-                    <span className="window-dot"></span>
+                            <span>SPRING 2004</span>
 
-                    <h1>
-                        Studio Ghibli Encyclopedia CD-ROM
-                    </h1>
+                        </div>
 
-                </div>
+                        <div className="archive-stamp">
+                            STUDIO GHIBLI ARCHIVE
+                        </div>
 
+                    </div>
 
-                <div className="title-right">
+                    <div className="masthead-center">
 
-                    Version 1.0 • Japan • 2004
+                        <h1>
+                            GHIBLI DAYS
+                        </h1>
 
-                </div>
+                        <p className="subtitle">
+                            An illustrated archive dedicated to Studio Ghibli’s films, artwork, stories and the emotions they leave behind.
+                        </p>
 
+                    </div>
 
-            </header>
+                </header>
 
+                <nav className="editorial-nav">
 
+                    {navigation.map((item) => (
 
+                        <NavLink
+                            key={item.path}
+                            to={item.path}
+                            end={item.path === "/"}
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
+                            {item.label}
+                        </NavLink>
 
+                    ))}
 
-            <nav className="window-nav">
+                </nav>
 
-
-                <Link to="/">
-                    Home
-                </Link>
-
-
-                <Link to="/films">
-                    Films
-                </Link>
-
-
-                <Link to="/history">
-                    History
-                </Link>
-
-
-                <Link to="/themes">
-                    Themes
-                </Link>
-
-
-                <Link to="/art-style">
-                    Art Style
-                </Link>
-
-
-                <Link to="/legacy">
-                    Legacy
-                </Link>
-
-
-                <Link to="/references">
-                    Archive
-                </Link>
-
-
-            </nav>
-
-
-
-
-
-            <main className="window-content">
-
-
-                <ArchiveSidebar />
-
-
-                <section className="archive-main">
+                <div className="chapter-frame">
 
                     <Outlet />
 
-                </section>
+                </div>
 
+                <footer className="magazine-footer">
 
-            </main>
+                    <div className="footer-left">
 
+                        <span>GHIBLI DAYS</span>
 
+                    </div>
 
+                    <div className="footer-center">
 
+                        <span>
+                            Printed with love for Studio Ghibli fans
+                        </span>
 
-            <footer className="window-statusbar">
+                    </div>
 
+                    <div className="footer-right">
 
-                <span>
-                    Archive Loaded
-                </span>
+                        <span>COLLECTOR'S EDITION</span>
 
+                        <span>SPRING 2004</span>
 
-                <span>
-                    Version 1.0 • Japan • 2004
-                </span>
+                    </div>
 
+                </footer>
 
-            </footer>
-
+            </div>
 
         </div>
-
     );
-
 }
