@@ -1,0 +1,215 @@
+.films-page {
+
+    padding: 20px 0;
+
+}
+
+
+.films-header {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+
+.films-header h1 {
+
+    margin: 18px 0;
+
+    font-size: 3rem;
+
+    font-weight: 500;
+
+    color: #cf5d99;
+
+}
+
+
+.films-header p:not(.section-label) {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: #70596a;
+
+}
+
+
+
+.films-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+}
+
+
+
+.film-card {
+
+    padding: 32px;
+
+    background:
+
+        linear-gradient(180deg,
+            #fff,
+            #fff5fa);
+
+    border: 2px solid #f3bfd8;
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 12px 25px rgba(228, 116, 173, .1);
+
+    position: relative;
+
+}
+
+
+
+.film-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+
+    right: 25px;
+
+    width: 65px;
+
+    height: 22px;
+
+    background: #ffd7e9;
+
+    border-radius: 4px;
+
+    transform: rotate(8deg);
+
+}
+
+
+
+.film-number {
+
+    color: #d05d97;
+
+    text-transform: uppercase;
+
+    letter-spacing: .25em;
+
+    font-size: .7rem;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.film-card h2 {
+
+    color: #cf5d99;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.film-year {
+
+    color: #d7649f;
+
+    font-size: .9rem;
+
+}
+
+
+
+.director {
+
+    margin-top: 18px;
+
+    font-style: italic;
+
+    color: #806174;
+
+}
+
+
+
+.film-card p {
+
+    line-height: 1.8;
+
+    color: #70596a;
+
+}
+
+
+
+.film-theme {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px dashed #f3bfd8;
+
+}
+
+
+
+.film-theme strong {
+
+    color: #cf5d99;
+
+    text-transform: uppercase;
+
+    letter-spacing: .2em;
+
+    font-size: .75rem;
+
+}
+
+
+
+.film-theme p {
+
+    margin-top: 10px;
+
+}
+
+
+
+@media(max-width:900px) {
+
+    .films-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .films-header h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+}
