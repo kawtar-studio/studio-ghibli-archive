@@ -1,0 +1,262 @@
+.history-page {
+
+    padding: 20px 0;
+
+}
+
+
+.history-header {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+
+.history-header h1 {
+
+    margin: 20px 0;
+
+    font-size: 3.5rem;
+
+    color: #cf5d99;
+
+    font-weight: 500;
+
+}
+
+
+.history-header p:not(.section-label) {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: #70596a;
+
+}
+
+
+.history-divider {
+
+    margin-top: 28px;
+
+    color: #df79ad;
+
+    letter-spacing: .8em;
+
+}
+
+
+
+.timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 70px;
+
+}
+.timeline-year::before {
+
+    content: "✿";
+
+    margin-right: 10px;
+
+    color: #ef9bc2;
+
+    font-size: 1.2rem;
+
+}
+
+
+.timeline-year::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -45px;
+
+    top: 50%;
+
+    width: 35px;
+
+    height: 1px;
+
+    background: #f3bfd8;
+
+}
+
+
+
+.timeline-entry {
+
+    display: grid;
+
+    grid-template-columns: 190px 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+
+}
+
+
+
+.timeline-year {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    font-size: 1.8rem;
+
+    color: #cf5d99;
+
+    font-weight: 500;
+
+    letter-spacing: .08em;
+
+}
+
+
+
+.timeline-content {
+
+    padding: 32px;
+
+    background:
+
+        linear-gradient(180deg,
+
+            #ffffff,
+
+            #fff5fa);
+
+    border: 2px solid #f3bfd8;
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 12px 25px rgba(228, 116, 173, .1);
+
+    position: relative;
+
+}
+
+
+
+.archive-label {
+
+    color: #d05d97;
+
+    text-transform: uppercase;
+
+    letter-spacing: .25em;
+
+    font-size: .7rem;
+
+}
+
+
+
+.timeline-content h2 {
+
+    color: #cf5d99;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    margin: 18px 0;
+
+}
+
+
+
+.timeline-content p {
+
+    color: #70596a;
+
+    line-height: 1.9;
+
+}
+
+
+
+.archive-note {
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: #fff0f7;
+
+    border-left: 3px solid #ef9bc2;
+
+}
+
+
+
+.archive-note strong {
+
+    color: #cf5d99;
+
+    font-size: .8rem;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.archive-note p {
+
+    margin-top: 10px;
+
+}
+
+
+
+@media(max-width:800px) {
+
+
+    .timeline-entry {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .timeline-year {
+
+        text-align: left;
+
+        padding-left: 10px;
+
+        font-size: 2rem;
+
+    }
+
+
+    .history-header h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+}

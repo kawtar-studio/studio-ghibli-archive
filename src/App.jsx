@@ -4,6 +4,10 @@ import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home/Home";
 
+import Films from "./pages/Films/Films";
+
+import History from "./pages/History/History";
+
 
 export default function App() {
 
@@ -18,6 +22,16 @@ export default function App() {
                     <Route
                         path="/"
                         element={<Home />}
+                    />
+
+                    <Route
+                        path="/films"
+                        element={<Films />}
+                    />
+
+                    <Route
+                        path="/history"
+                        element={<History />}
                     />
 
                 </Route>
