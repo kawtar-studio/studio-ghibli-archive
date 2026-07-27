@@ -1,22 +1,24 @@
 .history-page {
 
-    padding: 20px 0;
+    padding: 20px 0 80px;
 
 }
+
 
 
 .history-header {
 
     text-align: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 
 }
 
 
+
 .history-header h1 {
 
-    margin: 20px 0;
+    margin: 20px 0 10px;
 
     font-size: 3.5rem;
 
@@ -27,9 +29,24 @@
 }
 
 
-.history-header p:not(.section-label) {
 
-    max-width: 650px;
+.japanese-title {
+
+    color: #d98bb5;
+
+    font-size: 1.1rem;
+
+    letter-spacing: .25em;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.history-header p:not(.section-label):not(.japanese-title) {
+
+    max-width: 700px;
 
     margin: auto;
 
@@ -40,9 +57,10 @@
 }
 
 
+
 .history-divider {
 
-    margin-top: 28px;
+    margin-top: 30px;
 
     color: #df79ad;
 
@@ -52,26 +70,208 @@
 
 
 
+/* FOUNDERS */
+
+
+.founders-section {
+
+    margin-bottom: 90px;
+
+}
+
+
+
+.founders-section>h2 {
+
+    text-align: center;
+
+    margin: 15px 0 40px;
+
+    font-size: 2.3rem;
+
+    font-weight: 500;
+
+    color: #cf5d99;
+
+}
+
+
+
+.founders-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.founder-card {
+
+    position: relative;
+
+    padding: 30px;
+
+    background: linear-gradient(180deg,
+            #ffffff,
+            #fff6fb);
+
+    border: 2px solid #f3bfd8;
+
+    border-radius: 22px;
+
+    box-shadow:
+
+        0 14px 30px rgba(228, 116, 173, .1);
+
+    transition: .3s;
+
+}
+
+
+
+.founder-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+
+    right: 25px;
+
+    width: 70px;
+
+    height: 22px;
+
+    background: #ffd9eb;
+
+    border-radius: 5px;
+
+    transform: rotate(8deg);
+
+}
+
+
+
+.founder-card:hover {
+
+    transform: translateY(-7px);
+
+}
+
+
+
+.founder-card h3 {
+
+    color: #cf5d99;
+
+    font-size: 1.5rem;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.founder-card span {
+
+    display: block;
+
+    color: #d98bb5;
+
+    font-size: .8rem;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.founder-card p {
+
+    color: #70596a;
+
+    line-height: 1.9;
+
+}
+
+
+
+/* TIMELINE */
+
+
 .timeline {
 
     display: flex;
 
     flex-direction: column;
 
-    gap: 70px;
+    gap: 75px;
 
 }
+
+
+
+.timeline-entry {
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    gap: 65px;
+
+    align-items: start;
+
+}
+
+
+
+.timeline-year {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    color: #cf5d99;
+
+    font-size: 1.7rem;
+
+    font-weight: 500;
+
+    letter-spacing: .08em;
+
+    padding-top: 35px;
+
+}
+
+
+
 .timeline-year::before {
 
     content: "✿";
 
-    margin-right: 10px;
+    margin-right: 12px;
 
     color: #ef9bc2;
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
 }
+
 
 
 .timeline-year::after {
@@ -94,63 +294,64 @@
 
 
 
-.timeline-entry {
-
-    display: grid;
-
-    grid-template-columns: 190px 1fr;
-
-    gap: 60px;
-
-    align-items: start;
-
-}
-
-
-
-.timeline-year {
-
-    position: relative;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    font-size: 1.8rem;
-
-    color: #cf5d99;
-
-    font-weight: 500;
-
-    letter-spacing: .08em;
-
-}
-
+/* CARDS */
 
 
 .timeline-content {
 
-    padding: 32px;
+    position: relative;
 
-    background:
+    padding: 35px;
 
-        linear-gradient(180deg,
-
+    background: linear-gradient(180deg,
             #ffffff,
-
-            #fff5fa);
+            #fff6fb);
 
     border: 2px solid #f3bfd8;
 
-    border-radius: 18px;
+    border-radius: 22px;
 
     box-shadow:
 
-        0 12px 25px rgba(228, 116, 173, .1);
+        0 15px 30px rgba(228, 116, 173, .1);
 
-    position: relative;
+    transition: .3s;
+
+}
+
+
+
+.timeline-content:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 20px 35px rgba(228, 116, 173, .16);
+
+}
+
+
+
+.timeline-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+
+    right: 25px;
+
+    width: 75px;
+
+    height: 22px;
+
+    background: #ffd9eb;
+
+    border-radius: 5px;
+
+    transform: rotate(8deg);
 
 }
 
@@ -160,11 +361,11 @@
 
     color: #d05d97;
 
-    text-transform: uppercase;
+    font-size: .72rem;
 
     letter-spacing: .25em;
 
-    font-size: .7rem;
+    text-transform: uppercase;
 
 }
 
@@ -172,13 +373,13 @@
 
 .timeline-content h2 {
 
+    margin: 18px 0;
+
     color: #cf5d99;
 
     font-size: 2rem;
 
     font-weight: 500;
-
-    margin: 18px 0;
 
 }
 
@@ -188,21 +389,26 @@
 
     color: #70596a;
 
-    line-height: 1.9;
+    line-height: 1.95;
 
 }
 
 
 
+/* NOTES */
+
+
 .archive-note {
 
-    margin-top: 25px;
+    margin-top: 28px;
 
     padding: 18px;
 
     background: #fff0f7;
 
-    border-left: 3px solid #ef9bc2;
+    border-left: 4px solid #ef9bc2;
+
+    border-radius: 0 14px 14px 0;
 
 }
 
@@ -230,21 +436,68 @@
 
 
 
-@media(max-width:800px) {
+/* ANIMATION */
+
+
+.founder-card,
+.timeline-content {
+
+    animation: fadeUp .6s ease both;
+
+}
+
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px) {
+
+
+    .founders-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
 
 
     .timeline-entry {
 
         grid-template-columns: 1fr;
 
-        gap: 15px;
+        gap: 20px;
 
     }
 
 
+
     .timeline-year {
 
-        text-align: left;
+        justify-content: flex-start;
 
         padding-left: 10px;
 
@@ -253,10 +506,52 @@
     }
 
 
-    .history-header h1 {
 
-        font-size: 2.5rem;
+    .timeline-year::after {
+
+        display: none;
 
     }
+
+
+
+    .history-header h1 {
+
+        font-size: 2.6rem;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px) {
+
+
+    .history-page {
+
+        padding: 20px 15px 60px;
+
+    }
+
+
+
+    .timeline-content,
+    .founder-card {
+
+        padding: 25px;
+
+    }
+
+
+
+    .timeline-content h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+
 
 }
