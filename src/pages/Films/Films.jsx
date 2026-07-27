@@ -1,131 +1,275 @@
 import "./Films.css";
-
-const films = [
-    {
-        title: "Spirited Away",
-        year: "2001",
-        director: "Hayao Miyazaki",
-        description:
-            "A young girl enters a mysterious spirit world where she must find courage and discover herself.",
-        themes: "Identity, courage, friendship"
-    },
-
-    {
-        title: "My Neighbor Totoro",
-        year: "1988",
-        director: "Hayao Miyazaki",
-        description:
-            "Two sisters discover magical creatures living in the forests surrounding their new home.",
-        themes: "Childhood, nature, imagination"
-    },
-
-    {
-        title: "Howl's Moving Castle",
-        year: "2004",
-        director: "Hayao Miyazaki",
-        description:
-            "A young woman enters a world of magic and transformation after meeting a mysterious wizard.",
-        themes: "Love, war, transformation"
-    },
-
-    {
-        title: "Princess Mononoke",
-        year: "1997",
-        director: "Hayao Miyazaki",
-        description:
-            "A warrior becomes caught between ancient spirits of the forest and the forces of human civilization.",
-        themes: "Nature, conflict, humanity"
-    },
-
-    {
-        title: "Kiki's Delivery Service",
-        year: "1989",
-        director: "Hayao Miyazaki",
-        description:
-            "A young witch leaves home and learns independence while discovering her place in the world.",
-        themes: "Growing up, confidence, friendship"
-    },
-
-    {
-        title: "Ponyo",
-        year: "2008",
-        director: "Hayao Miyazaki",
-        description:
-            "A magical friendship between a boy and a sea creature changes two worlds forever.",
-        themes: "Childhood, oceans, wonder"
-    }
-];
-
+import { Link } from "react-router-dom";
+import films from "../../data/films";
 
 export default function Films() {
+
+    const decades = [
+        {
+            title: "1980s",
+            films: films.filter(
+                film => film.year >= 1980 && film.year <= 1989
+            )
+        },
+
+        {
+            title: "1990s",
+            films: films.filter(
+                film => film.year >= 1990 && film.year <= 1999
+            )
+        },
+
+        {
+            title: "2000s",
+            films: films.filter(
+                film => film.year >= 2000 && film.year <= 2009
+            )
+        },
+
+        {
+            title: "2010s",
+            films: films.filter(
+                film => film.year >= 2010 && film.year <= 2019
+            )
+        },
+
+        {
+            title: "2020s",
+            films: films.filter(
+                film => film.year >= 2020
+            )
+        }
+    ];
+
+
+    let archiveNumber = 1;
+
 
     return (
 
         <main className="films-page">
 
+
             <header className="films-header">
 
+
                 <p className="section-label">
-                    FILM ARCHIVE
+                    COMPLETE FILM ARCHIVE
                 </p>
+
 
                 <h1>
                     The Worlds of Studio Ghibli
                 </h1>
 
+
                 <p>
-                    A collection of stories, characters and memories preserved through the years.
+                    Every Studio Ghibli film is its own little universe.
+                    Some tell quiet stories about everyday life, while
+                    others take us through enchanted forests, floating
+                    kingdoms and magical worlds. Together they create one
+                    of the most beloved collections of animated films ever made.
                 </p>
+
 
             </header>
 
 
-            <section className="films-grid">
 
-                {films.map((film, index) => (
 
-                    <article
-                        className="film-card"
-                        key={film.title}
-                    >
+            <section className="films-intro">
 
-                        <p className="film-number">
-                            ARCHIVE ENTRY {String(index + 1).padStart(2, "0")}
-                        </p>
 
-                        <h2>
-                            {film.title}
-                        </h2>
+                <div>
 
-                        <span className="film-year">
-                            {film.year}
-                        </span>
+                    <h2>
+                        Archive Overview
+                    </h2>
 
-                        <p className="director">
-                            Directed by {film.director}
-                        </p>
 
-                        <p>
-                            {film.description}
-                        </p>
+                    <p>
+                        From <strong>Nausicaä of the Valley of the Wind</strong>
+                        in 1984 to <strong>The Boy and the Heron</strong> in 2023,
+                        Studio Ghibli has created films that continue to inspire
+                        audiences through unforgettable stories, breathtaking
+                        animation and timeless characters.
+                    </p>
 
-                        <div className="film-theme">
+                </div>
 
-                            <strong>
-                                Themes
-                            </strong>
 
-                            <p>
-                                {film.themes}
-                            </p>
 
-                        </div>
+                <div>
 
-                    </article>
+                    <h2>
+                        Inside This Collection
+                    </h2>
 
-                ))}
+
+                    <ul>
+
+                        <li>24 Feature Films</li>
+
+                        <li>5 Different Decades</li>
+
+                        <li>6 Visionary Directors</li>
+
+                        <li>Hundreds of Memorable Characters</li>
+
+                    </ul>
+
+                </div>
+
 
             </section>
+
+
+
+
+
+
+            {decades.map((decade) => (
+
+                <section
+                    key={decade.title}
+                    className="decade-section"
+                >
+
+
+                    <h2 className="decade-title">
+
+                        {decade.title}
+
+                    </h2>
+
+
+
+
+                    <div className="films-grid">
+
+
+                        {decade.films.map((film) => (
+
+                            <Link
+
+                                key={film.id}
+
+                                to={`/films/${film.id}`}
+
+                                className="film-card"
+
+                            >
+
+
+                                <p className="film-number">
+
+                                    ARCHIVE #{String(archiveNumber++).padStart(3, "0")}
+
+                                </p>
+
+
+
+
+                                <h3>
+
+                                    {film.title}
+
+                                </h3>
+
+
+
+
+                                <div className="film-meta">
+
+                                    <span>
+                                        {film.year}
+                                    </span>
+
+                                    <span>
+                                        •
+                                    </span>
+
+                                    <span>
+                                        {film.director}
+                                    </span>
+
+                                </div>
+
+
+
+
+
+                                <p className="film-genre">
+
+                                    {film.genre.join(" • ")}
+
+                                </p>
+
+
+
+
+
+                                <div className="film-details">
+
+
+                                    <div>
+
+                                        <strong>
+                                            Duration
+                                        </strong>
+
+
+                                        <span>
+
+                                            {film.duration || "—"}
+
+                                        </span>
+
+                                    </div>
+
+
+
+
+
+                                    <div>
+
+                                        <strong>
+                                            Themes
+                                        </strong>
+
+
+                                        <span>
+
+                                            {film.themes.join(" • ")}
+
+                                        </span>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+                            </Link>
+
+
+                        ))}
+
+
+                    </div>
+
+
+
+                </section>
+
+
+            ))}
+
+
 
         </main>
 
