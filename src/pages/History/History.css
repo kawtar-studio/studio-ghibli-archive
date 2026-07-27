@@ -30,20 +30,6 @@
 
 
 
-.japanese-title {
-
-    color: #d98bb5;
-
-    font-size: 1.1rem;
-
-    letter-spacing: .25em;
-
-    margin-bottom: 15px;
-
-}
-
-
-
 .history-header p:not(.section-label):not(.japanese-title) {
 
     max-width: 700px;
@@ -67,11 +53,6 @@
     letter-spacing: .8em;
 
 }
-
-
-
-/* FOUNDERS */
-
 
 .founders-section {
 
@@ -206,10 +187,6 @@
 }
 
 
-
-/* TIMELINE */
-
-
 .timeline {
 
     display: flex;
@@ -291,10 +268,6 @@
     background: #f3bfd8;
 
 }
-
-
-
-/* CARDS */
 
 
 .timeline-content {
@@ -394,10 +367,6 @@
 }
 
 
-
-/* NOTES */
-
-
 .archive-note {
 
     margin-top: 28px;
@@ -435,10 +404,6 @@
 }
 
 
-
-/* ANIMATION */
-
-
 .founder-card,
 .timeline-content {
 
@@ -469,9 +434,6 @@
 
 }
 
-
-
-/* MOBILE */
 
 
 @media(max-width:900px) {

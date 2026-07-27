@@ -126,11 +126,6 @@ export default function History() {
                 </h1>
 
 
-                <p className="japanese-title">
-                    スタジオジブリの歴史
-                </p>
-
-
                 <p>
                     A journey through the studio, the artists and the worlds they created.
                 </p>

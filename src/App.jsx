@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Films from "./pages/Films/Films";
 import FilmDetails from "./pages/FilmDetails/FilmDetails";
 import History from "./pages/History/History";
+import Themes from "./pages/Themes/Themes";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -38,6 +39,11 @@ export default function App() {
                     <Route
                         path="/history"
                         element={<History />}
+                    />
+
+                    <Route
+                        path="/themes"
+                        element={<Themes />}
                     />
 
                 </Route>
