@@ -1,105 +1,68 @@
 import "./MainLayout.css";
-import { NavLink, Outlet } from "react-router-dom";
+import ArchiveSidebar from "../components/ArchiveSidebar";
 
-const navigation = [
-    { label: "HOME", path: "/" },
-    { label: "FILMS", path: "/films" },
-    { label: "HISTORY", path: "/history" },
-    { label: "THEMES", path: "/themes" },
-    { label: "ART GALLERY", path: "/art-style" },
-    { label: "LEGACY", path: "/legacy" },
-];
-
-export default function MainLayout() {
+export default function MainLayout({ children }) {
     return (
-        <div className="magazine-shell">
+        <div className="app-window">
 
-            <div className="paper">
+            <header className="window-titlebar">
 
-                <header className="masthead">
+                <div className="title-left">
+                    <span className="window-dot"></span>
 
-                    <div className="masthead-top">
-
-                        <div className="issue">
-
-                            <span>ISSUE 01</span>
-
-                            <span>SPRING 2004</span>
-
-                        </div>
-
-                        <div className="archive-stamp">
-                            STUDIO GHIBLI ARCHIVE
-                        </div>
-
-                    </div>
-
-                    <div className="masthead-center">
-
-                        <h1>
-                            GHIBLI DAYS
-                        </h1>
-
-                        <p className="subtitle">
-                            An illustrated archive dedicated to Studio Ghibli’s films, artwork, stories and the emotions they leave behind.
-                        </p>
-
-                    </div>
-
-                </header>
-
-                <nav className="editorial-nav">
-
-                    {navigation.map((item) => (
-
-                        <NavLink
-                            key={item.path}
-                            to={item.path}
-                            end={item.path === "/"}
-                            className={({ isActive }) =>
-                                isActive ? "active" : ""
-                            }
-                        >
-                            {item.label}
-                        </NavLink>
-
-                    ))}
-
-                </nav>
-
-                <div className="chapter-frame">
-
-                    <Outlet />
-
+                    <h1>
+                        Studio Ghibli Encyclopedia CD-ROM
+                    </h1>
                 </div>
 
-                <footer className="magazine-footer">
+                <div className="title-right">
+                    Version 1.0 • Japan • 2004
+                </div>
 
-                    <div className="footer-left">
+            </header>
 
-                        <span>GHIBLI DAYS</span>
 
-                    </div>
+            <nav className="window-nav">
 
-                    <div className="footer-center">
+                <a href="/">Home</a>
+                <a href="/films">Films</a>
+                <a href="/history">History</a>
+                <a href="/themes">Themes</a>
+                <a href="/art-style">Art Style</a>
+                <a href="/legacy">Legacy</a>
+                <a href="/references">Archive</a>
 
-                        <span>
-                            Printed with love for Studio Ghibli fans
-                        </span>
+            </nav>
 
-                    </div>
 
-                    <div className="footer-right">
+            <main className="window-content">
 
-                        <span>COLLECTOR'S EDITION</span>
+                <ArchiveSidebar />
 
-                        <span>SPRING 2004</span>
+                <section className="archive-main">
 
-                    </div>
+                    {children}
 
-                </footer>
+                </section>
 
-            </div>
+            </main>
+
+
+            <footer className="window-statusbar">
+
+                <span>
+                    Ghibli Days Archive
+                </span>
+
+                <span>
+                    Curated & Designed by Kawtar Barakat
+                </span>
+
+                <span>
+                    Since 2026 ✿
+                </span>
+
+            </footer>
 
         </div>
     );

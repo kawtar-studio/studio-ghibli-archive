@@ -1,0 +1,26 @@
+.movie-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 24px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 20px;
+    gap: 16px;
+}
+
+.movie-meta-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.movie-meta-grid span {
+    font-size: .68rem;
+    letter-spacing: .16em;
+    opacity: .65;
+    text-transform: uppercase;
+}
+
+.movie-meta-grid strong {
+    font-size: .92rem;
+    font-weight: 600;
+}
