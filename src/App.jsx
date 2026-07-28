@@ -8,6 +8,7 @@ import FilmDetails from "./pages/FilmDetails/FilmDetails";
 import History from "./pages/History/History";
 import Themes from "./pages/Themes/Themes";
 import ArtGallery from "./pages/ArtGallery/ArtGallery";
+import Legacy from "./pages/Legacy/Legacy";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -50,6 +51,11 @@ export default function App() {
                     <Route
                         path="/art-style"
                         element={<ArtGallery />}
+                    />
+
+                    <Route
+                        path="/legacy"
+                        element={<Legacy />}
                     />
 
                 </Route>
