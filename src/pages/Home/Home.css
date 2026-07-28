@@ -24,12 +24,6 @@
 }
 
 
-
-/* =========================
-   OPENING SPREAD
-========================= */
-
-
 .opening-spread {
 
     display: flex;
@@ -100,12 +94,6 @@
 
 
 
-
-/* =========================
-   LABELS
-========================= */
-
-
 .section-label {
 
     display: inline-flex;
@@ -147,14 +135,6 @@
     color: #ef7db6;
 
 }
-
-
-
-
-
-/* =========================
-   EDITORIAL
-========================= */
 
 
 .left-page h1 {
@@ -210,11 +190,6 @@
 
 
 
-/* =========================
-   POSTCARD
-========================= */
-
-
 .postcard {
 
     margin-top: 55px;
@@ -250,15 +225,6 @@
 
 }
 
-
-
-
-
-/* =========================
-   COVER
-========================= */
-
-
 .cover-image {
 
     padding: 10px;
@@ -287,13 +253,6 @@
 }
 
 
-
-
-
-
-/* =========================
-   FEATURES
-========================= */
 
 
 .headline-block {
@@ -334,13 +293,6 @@
 
 }
 
-
-
-
-
-/* =========================
-   FILM OF THE MONTH
-========================= */
 
 
 .film-month {
@@ -404,12 +356,6 @@
 }
 
 
-
-
-
-/* =========================
-   CONTENTS
-========================= */
 
 
 .contents {
@@ -520,13 +466,6 @@
 
 
 
-
-
-/* =========================
-   PREVIEWS
-========================= */
-
-
 .feature-preview {
 
     margin-top: 80px;
@@ -568,14 +507,6 @@
 }
 
 
-
-
-
-/* =========================
-   FOOTER
-========================= */
-
-
 .page-footer {
 
     margin-top: 90px;
@@ -597,14 +528,6 @@
     font-size: .7rem;
 
 }
-
-
-
-
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 
 @media(max-width:1000px) {
@@ -670,5 +593,255 @@
         gap: 12px;
 
     }
+
+}
+
+.home-page {
+
+    animation: fadeInPage 1s ease both;
+
+}
+
+
+
+@keyframes fadeInPage {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+.issue-bar {
+
+    animation: fadeDown .8s ease both;
+
+}
+
+
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-15px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+.left-page {
+
+    animation: revealLeft 1s ease .2s both;
+
+}
+
+
+
+.right-page {
+
+    animation: revealRight 1s ease .3s both;
+
+}
+
+
+
+@keyframes revealLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-25px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+
+@keyframes revealRight {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(25px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+
+.cover-image {
+
+    transition: transform .5s ease, box-shadow .5s ease;
+
+}
+
+
+
+.cover-image:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 20px 40px rgba(228, 116, 173, .18);
+
+}
+
+
+
+.cover-image img {
+
+    transition: transform .6s ease;
+
+}
+
+
+
+.cover-image:hover img {
+
+    transform: scale(1.03);
+
+}
+
+
+
+.contents-item {
+
+    opacity: 0;
+
+    animation: contentReveal .7s ease forwards;
+
+}
+
+
+
+.contents-item:nth-child(1) {
+
+    animation-delay: .1s;
+
+}
+
+
+.contents-item:nth-child(2) {
+
+    animation-delay: .2s;
+
+}
+
+
+.contents-item:nth-child(3) {
+
+    animation-delay: .3s;
+
+}
+
+
+.contents-item:nth-child(4) {
+
+    animation-delay: .4s;
+
+}
+
+
+.contents-item:nth-child(5) {
+
+    animation-delay: .5s;
+
+}
+
+
+.contents-item:nth-child(6) {
+
+    animation-delay: .6s;
+
+}
+
+
+
+@keyframes contentReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+.feature-preview article {
+
+    transition: transform .3s ease, box-shadow .3s ease;
+
+}
+
+
+
+.feature-preview article:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(228, 116, 173, .12);
 
 }
