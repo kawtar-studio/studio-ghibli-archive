@@ -120,6 +120,16 @@ can it also become the force that helps restore it?
 
         ],
 
+        symbolism: [
+
+            "The Toxic Jungle symbolizes nature's ability to heal itself, even after humanity has caused unimaginable destruction.",
+
+            "The Ohmu represent the consequences of misunderstanding the natural world, revealing that what humans fear is often neither evil nor hostile.",
+
+            "Nausicaä herself symbolizes compassion, empathy, and the belief that true strength comes from understanding rather than violence."
+
+        ],
+
 
 
         productionNotes: `
