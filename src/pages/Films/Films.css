@@ -398,17 +398,6 @@
 
 
 
-/* ANIMATION */
-
-
-.film-card,
-.films-intro div {
-
-    animation: fadeUp .6s ease both;
-
-}
-
-
 
 @keyframes fadeUp {
 
@@ -430,10 +419,6 @@
     }
 
 }
-
-
-
-/* MOBILE */
 
 
 @media(max-width:900px) {
