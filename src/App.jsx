@@ -7,6 +7,7 @@ import Films from "./pages/Films/Films";
 import FilmDetails from "./pages/FilmDetails/FilmDetails";
 import History from "./pages/History/History";
 import Themes from "./pages/Themes/Themes";
+import ArtGallery from "./pages/ArtGallery/ArtGallery";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -44,6 +45,11 @@ export default function App() {
                     <Route
                         path="/themes"
                         element={<Themes />}
+                    />
+
+                    <Route
+                        path="/art-style"
+                        element={<ArtGallery />}
                     />
 
                 </Route>
