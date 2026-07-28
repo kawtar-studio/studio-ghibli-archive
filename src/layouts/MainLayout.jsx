@@ -76,24 +76,28 @@ export default function MainLayout() {
                 <footer className="magazine-footer">
 
                     <div className="footer-left">
-
                         <span>GHIBLI DAYS</span>
-
                     </div>
+
 
                     <div className="footer-center">
 
                         <span>
-                            Printed with love for Studio Ghibli fans
+                            © 2026 · Crafted with love by Barakat Kawtar
                         </span>
 
                     </div>
 
+
                     <div className="footer-right">
 
-                        <span>COLLECTOR'S EDITION</span>
+                        <span>
+                            COLLECTOR'S EDITION
+                        </span>
 
-                        <span>SPRING 2004</span>
+                        <span>
+                            SPRING 2004
+                        </span>
 
                     </div>
 
